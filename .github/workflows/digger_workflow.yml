@@ -31,6 +31,7 @@ jobs:
           digger-hostname: 'https://cloud.digger.dev'
           digger-organisation: 'digger'
           digger-token: ${{ secrets.DIGGER_TOKEN }}
+          upload-plan-destination: 'github'
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
